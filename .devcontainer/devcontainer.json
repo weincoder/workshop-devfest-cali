@@ -1,0 +1,20 @@
+{
+  "name": "Workshop Vertex AI (Angular + Flutter)",
+  "image": "ghcr.io/cirruslabs/flutter:stable",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "22"
+    }
+  },
+  "forwardPorts": [4200, 8080],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Dart-Code.flutter",
+        "Dart-Code.dart-code",
+        "Angular.ng-template"
+      ]
+    }
+  },
+  "postCreateCommand": "npm install -g @angular/cli"
+}
