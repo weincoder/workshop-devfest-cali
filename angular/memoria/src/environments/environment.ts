@@ -6,7 +6,7 @@ export const environment = {
   isFirebaseConfigured: false,
   useVertexAI: true,
   vertexAILocation: "global",
-  chatModel: "gemini-2.5-flash",
+  chatModel: "gemini-3.8-flash",
   appCheck: {
     debugToken: "",
     recaptchaV3SiteKey: "",

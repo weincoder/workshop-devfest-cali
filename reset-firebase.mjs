@@ -16,8 +16,8 @@ const configPath = path.join(__dirname, 'firebase-config.json');
 const template = {
   useVertexAI: true,
   vertexAILocation: 'global',
-  chatModel: 'gemini-2.5-flash',
-  imageModel: 'gemini-2.5-flash-image',
+  chatModel: 'gemini-3.8-flash',
+  imageModel: 'gemini-3.1-flash-image',
   appCheck: {
     debugToken: 'PEGA_AQUI_TU_DEBUG_TOKEN_DE_APP_CHECK',
     recaptchaV3SiteKey: '',

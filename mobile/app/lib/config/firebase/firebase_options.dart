@@ -12,8 +12,8 @@ class WorkshopAIConfig {
   static const bool isFirebaseConfigured = false;
   static const bool useVertexAI = true;
   static const String vertexAILocation = "global";
-  static const String chatModel = "gemini-2.5-flash";
-  static const String imageModel = "gemini-2.5-flash-image";
+  static const String chatModel = "gemini-3.8-flash";
+  static const String imageModel = "gemini-3.1-flash-image";
   static const String appCheckDebugToken = "";
   static const String appCheckRecaptchaSiteKey = "";
 }

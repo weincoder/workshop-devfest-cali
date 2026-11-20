@@ -31,8 +31,8 @@ const fb = rawConfig.firebase ?? {};
 const appCheck = rawConfig.appCheck ?? {};
 const useVertexAI = rawConfig.useVertexAI ?? true;
 const vertexAILocation = rawConfig.vertexAILocation ?? 'global';
-const chatModel = rawConfig.chatModel ?? 'gemini-2.5-flash';
-const imageModel = rawConfig.imageModel ?? 'gemini-2.5-flash-image';
+const chatModel = rawConfig.chatModel ?? 'gemini-3.8-flash';
+const imageModel = rawConfig.imageModel ?? 'gemini-3.1-flash-image';
 
 const rawDebugToken = String(appCheck.debugToken ?? '').trim();
 const debugToken =
