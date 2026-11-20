@@ -9,11 +9,11 @@
   "forwardPorts": [4200, 8080],
   "portsAttributes": {
     "8080": {
-      "label": "Flutter Web",
+      "label": "Flutter Web (AI Diary)",
       "onAutoForward": "openBrowser"
     },
     "4200": {
-      "label": "Angular App",
+      "label": "Angular App (AI Memory Trainer)",
       "onAutoForward": "openBrowser"
     }
   },
@@ -26,5 +26,5 @@
       ]
     }
   },
-  "postCreateCommand": "flutter config --enable-web && npm install -g @angular/cli && echo 'alias run-flutter=\"flutter run -d web-server --web-port 8080 --web-hostname 0.0.0.0\"' >> ~/.bashrc"
+  "postCreateCommand": "flutter config --enable-web && npm install -g @angular/cli && (cd angular/memoria && npm install) && (cd mobile/app && flutter pub get) && printf 'alias setup-firebase=\"node %s/setup-firebase.mjs\"\\nalias run-angular=\"npm --prefix %s/angular/memoria run start:codespace\"\\nalias run-flutter=\"cd %s/mobile/app && flutter run -d web-server --web-port 8080 --web-hostname 0.0.0.0\"\\n' \"$(pwd)\" \"$(pwd)\" \"$(pwd)\" >> ~/.bashrc"
 }

@@ -1,0 +1,15 @@
+{
+  "name": "workshop-devfest-cali",
+  "private": true,
+  "description": "Workshop DevFest Cali: Apps Agénticas con Angular, Flutter Web y Firebase Vertex AI",
+  "scripts": {
+    "setup": "node setup-firebase.mjs",
+    "reset-config": "node reset-firebase.mjs",
+    "angular": "npm --prefix angular/memoria run start:codespace",
+    "angular:local": "npm --prefix angular/memoria start",
+    "angular:build": "npm --prefix angular/memoria run build",
+    "flutter": "cd mobile/app && flutter run -d web-server --web-port 8080 --web-hostname 0.0.0.0",
+    "flutter:local": "cd mobile/app && flutter run -d chrome",
+    "flutter:build": "cd mobile/app && flutter build web"
+  }
+}
