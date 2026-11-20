@@ -7,6 +7,16 @@
     }
   },
   "forwardPorts": [4200, 8080],
+  "portsAttributes": {
+    "8080": {
+      "label": "Flutter Web",
+      "onAutoForward": "openBrowser"
+    },
+    "4200": {
+      "label": "Angular App",
+      "onAutoForward": "openBrowser"
+    }
+  },
   "customizations": {
     "vscode": {
       "extensions": [
@@ -16,5 +26,5 @@
       ]
     }
   },
-  "postCreateCommand": "npm install -g @angular/cli"
+  "postCreateCommand": "flutter config --enable-web && npm install -g @angular/cli && echo 'alias run-flutter=\"flutter run -d web-server --web-port 8080 --web-hostname 0.0.0.0\"' >> ~/.bashrc"
 }
