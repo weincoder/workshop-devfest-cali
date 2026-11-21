@@ -117,10 +117,10 @@ Abre el puerto **4200** y prueba escribir:
 Abre una **segunda terminal** y ejecuta:
 ```bash
 # En GitHub Codespaces:
-npm run flutter
+flutter run -d web-server --web-port 8080 --web-hostname 0.0.0.0
 
 # En tu computador local (Chrome):
-npm run flutter:local
+flutter run -d web-server --web-port 8080 --web-hostname 0.0.0.0
 ```
 Abre el puerto **8080** y prueba en el panel del **Asistente Agéntico**:
 - *"Cambia el color a morado"*
